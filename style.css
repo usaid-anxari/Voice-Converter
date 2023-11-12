@@ -4,10 +4,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-.hero{
-        width: 100;
-        min-height: 100vh;
+
+body{
         background: linear-gradient(247deg , #014656,#610d3fd1);
+}
+.hero{
+        width: 100%;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -88,3 +91,50 @@ select{
     background-position-x: calc(100% - 20px);
     background-position-y: 20px;
 }
+
+@media only screen and (max-width: 620px) {
+    .hero h1{
+        font-size: 35px;
+        width: 50vh;
+    }
+    textarea{
+        width: 50vh;
+    }
+    .row{
+        width: 50vh;
+    }
+    .row select{
+        width: 10px
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .hero h1{
+        font-size: 35px;
+        width: 43vh;
+    }
+    textarea{
+        width: 45vh;
+    }
+    .row{
+        width: 45vh;
+    }
+    .row select{
+        width: 10px
+    }
+  }
+  @media only screen and (max-width: 280px) {
+    .hero h1{
+        font-size: 25px;
+    width: 38vh;
+    }
+    textarea{
+        width: 40vh;
+    }
+    .row{
+        width: 40vh;
+    }
+    .row select{
+        width: 10px
+    }
+  }
